@@ -1,11 +1,28 @@
-// import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import Main from './Components/Main';
+import Main from '../src/Components/Main';
+import Header from '../src/Components/Header';
 
 function App() {
+  const [headerClass, setHeaderClass] = useState('');
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setHeaderClass('sticky');
+    } else {
+      setHeaderClass('');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      <Main/>
+      <Header className={headerClass} />
+      <Main />
     </>
   );
 }

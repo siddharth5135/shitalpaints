@@ -1,0 +1,106 @@
+.gothica1black { /* Font H1*/
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.gothica1blackh3 { /* Font H3*/
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+  
+
+.landingPage {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure full viewport height */
+    overflow: hidden;
+}
+
+.leftContent {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    margin-left: 144px;
+    margin-top: -85px;
+    z-index: 10; /* Ensure it's above the carousel */
+}
+
+.leftContent h1{
+    font-size: 65px;
+    color: #e7b645;
+    margin: 0;
+}
+
+.leftContent h3 {
+    font-size: 40px;
+    /* color: #d2691e; */
+    margin: 0;
+}
+
+.ctaButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+
+.ctaButton:hover {
+    background-color: #fff; 
+    color: #000; 
+    border: 1px solid black;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    background-color: #fff; /* Adjust as needed */
+}
+
+
+@media (max-width: 768px) {
+    .leftContent h1{
+        font-size: 60px;
+        /* margin: 0; */
+    }
+    
+    .leftContent h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        /* margin: 0; */
+    }
+    
+    .ctaButton {
+        margin-top: 25px;
+        padding: 15px 30px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .leftContent {
+        margin-left: 90px;
+
+    }
+
+    .leftContent h1{
+        font-size: 60px;
+    }
+    
+    .leftContent h3 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}

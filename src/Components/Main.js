@@ -1,17 +1,30 @@
-import React from 'react';
-import Header from './Header';
-import Carousel from './Carousel';
-// import './Landing_page.css'; // Main CSS file
+import React, { useState } from 'react';
+import Carousel from '../Components/Carousel';
+import carouselStyle from '../Components/Landing.module.css';
 
 export default function Main() {
+
+    const [textColor, setTextColor] = useState("#E9DCC9");
+
+    const handleImageChanges = (color) => {
+        setTextColor(color)
+    }
+
     return (
-        <div className="landing-page">
-            <Header />
-            <Carousel />
-            <div className="content">
-                <h1>Welcome to Our Website</h1>
-                <p>We are glad to have you here!</p>
+        <>
+        <div className={carouselStyle.landingPage}>
+            <Carousel onImageChanges = {handleImageChanges}/>
+            <div className={carouselStyle.leftContent}>
+                <h1 className={carouselStyle.gothica1black} style={{ color: textColor }}>Shital Paints</h1>
+                <h3 className={carouselStyle.gothica1blackh3}>Color Your World with Elegance</h3>
+                {/* <br></br> */}
+                <button className={carouselStyle.ctaButton}>Learn More</button>
             </div>
         </div>
+            <div className={carouselStyle.content}>
+                <h2>Product Listing</h2>
+                {/* Add product listing content here */}
+            </div>
+        </>
     );
 }
