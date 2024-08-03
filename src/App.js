@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Main from '../src/Components/Main';
 import Header from '../src/Components/Header';
-
+import ProductsSection from './Components/ProductsSection';
 function App() {
   const [headerClass, setHeaderClass] = useState('');
 
@@ -23,6 +23,7 @@ function App() {
     <>
       <Header className={headerClass} />
       <Main />
+      <ProductsSection></ProductsSection>
     </>
   );
 }

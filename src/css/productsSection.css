@@ -1,0 +1,65 @@
+.content{
+    transition: all 500ms;
+}
+.transition{
+    transition: all 500ms;
+}
+.fade-out{
+    opacity: 0;
+}
+.image-container{
+    background-image: url(../Images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-body-height{
+    height: auto;
+}
+.fade-in {
+    /* transition: opacity 500ms; */
+    animation: fadeIn 0.5s ease;
+}
+.card-title{
+    font-size: 2vw;
+    padding: 0; /* Ensure no extra padding */
+    margin: 0; /* Ensure no extra margin */
+  
+}
+.card-size-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0; /* Ensure no extra padding */
+    margin: 0; /* Ensure no extra margin */
+  
+}
+.card-size-price-inside{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+    padding: 0; /* Ensure no extra padding */
+    margin: 0; /* Ensure no extra margin */
+  
+}
+.card-size-price-title{
+    color: #ff1066;
+}
+.card-p{
+    margin: 0;
+}
