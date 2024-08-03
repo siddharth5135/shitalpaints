@@ -4,11 +4,13 @@ import { getData as defaultData } from '../Data/Exterior/GetData';
 import { getData as interiorData } from '../Data/Interior/GetData';
 import '../css/Button.css';
 import '../css/productsSection.css';
+// import '../css/segment.css';
+
 
 export default function ProductsSection() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [data, setData] = useState(defaultData);
-
+    const [interiorData, setInteriorData] = useState(interiorData);
     const changeData = useCallback((importedData) => {
         setData(() => importedData);
     }, [setData]);
