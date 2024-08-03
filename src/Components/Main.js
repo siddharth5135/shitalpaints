@@ -21,10 +21,6 @@ export default function Main() {
                 <button className={carouselStyle.ctaButton}>Learn More</button>
             </div>
         </div>
-            <div className={carouselStyle.content}>
-                <h2>Product Listing</h2>
-                {/* Add product listing content here */}
-            </div>
-        </>
+    </>
     );
 }

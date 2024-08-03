@@ -7,6 +7,15 @@
 .fade-out{
     opacity: 0;
 }
+.card-main{
+    box-shadow: 0 10px 18px var(--card-shadow); /* Light shadow */
+    /* border: 2px solid #a5a5a5; */
+    border: 2px solid var(--card-border);
+    border-radius: 2.1rem 2.1rem 0rem 0rem;
+    min-height: 33.625rem;
+    background-color: var(--card-background);
+}
+
 .image-container{
     background-image: url(../Images/background.png);
     background-position: center;
@@ -35,27 +44,20 @@
 }
 .card-title{
     font-size: 2vw;
-    padding: 0; /* Ensure no extra padding */
-    margin: 0; /* Ensure no extra margin */
-  
+    margin: 0;  
+    color: var(--text-color);
 }
 .card-size-price{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0; /* Ensure no extra padding */
-    margin: 0; /* Ensure no extra margin */
-  
 }
 .card-size-price-inside{
     flex-direction: row;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-weight: 600;
-    padding: 0; /* Ensure no extra padding */
-    margin: 0; /* Ensure no extra margin */
-  
+    font-weight: 600;  
 }
 .card-size-price-title{
     color: #ff1066;
