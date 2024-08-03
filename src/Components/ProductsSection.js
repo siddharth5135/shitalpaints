@@ -54,16 +54,16 @@ export default function ProductsSection() {
             <div className='row' id='row' style={{ justifyContent: 'space-evenly', marginTop: '5%', marginBottom: '5%' }}>
                 {data.length > 0 ? (
                     data.map((item) => (
-                        <div className='card' style={{ width: '18rem', borderRadius: '2rem', marginTop: '1%', flex: 'none' ,alignSelf : 'start'}} key={item.id}>
-                            <div style={{ height: '45%', borderRadius: '2rem 2rem 0 0' }}>
-                                <div className='image-container'>
+                        <div className='card card-main' style={{ width: '18rem', borderRadius: '2rem', marginTop: '1%', flex: 'none' ,alignSelf : 'start'}} key={item.id}>
+                            <div style={{ height: '45%', borderRadius: '2.1rem 2.1rem 0 0' }}>
+                                {/* <div className='image-container'> */}
                                     <figure className='image-container container'>
                                         <img style={{ height: '100%', padding: '6%', display: 'block' }} src={require(`../Images/${item.segment}/${item.imageURL}`)} className="card-img-top img-fluid img-responsive" alt="..." />
                                     </figure>
-                                </div>
+                                {/* </div> */}
                             </div>
 
-                            <div className="card-body" style={{ paddingTop: "0.3rem", paddingBottom: '0.5rem', flex: 'none' }}>
+                            <div className="card-body" style={{ paddingTop: "0rem", paddingBottom: '1rem', flex: 'none' }}>
                                 <h5 className="card-title">{item.name}</h5>
                                 <div className='card-size-price'>
                                     <div className='card-size-price-inside card-size-price-title'>

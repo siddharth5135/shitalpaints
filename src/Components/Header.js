@@ -6,6 +6,8 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 const Header = ({ className }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const [darkMode,setDarkMode] = useState(false)
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -19,6 +21,10 @@ const Header = ({ className }) => {
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><button type="button" class="btn btn-dark" onClick={()=>{
+                        document.body.classList.toggle('dark-mode');
+                        setDarkMode((prev)=>!prev)
+                    }}>{darkMode ? 'Dark' : 'Light'}</button></li>
                     <div className={headerStyle.phone}>
                     <li>
                         <FontAwesomeIcon icon={faPhone} /> 
