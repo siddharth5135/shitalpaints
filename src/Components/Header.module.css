@@ -11,6 +11,10 @@
     transition: background-color 0.3s ease;
 }
 
+.custom_btn {
+    background-color: black;
+}
+
 .phone{
     background-color: #fff;
     color: black;
@@ -23,13 +27,6 @@
     color: black;
     margin-left: 5px;
 }
-
-/* Background color changes on scroll */
-.header.sticky {
-    background-color: #fff;
-    color: #000;
-}
-
 
 .logo {
     font-size: 24px;
